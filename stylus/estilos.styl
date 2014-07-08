@@ -1,3 +1,67 @@
+@import "normalize.styl"
 
-h1
-	color green
+gris_oscuro = #333333
+gris_claro = #818181
+
+a
+	text-decoration none
+body
+	font-family 'Varela Round', sans-serif
+	font-size 16px
+
+figure
+	margin 0
+
+
+.author
+	color gris_claro
+//buttons
+
+.border-button
+	border-bottom 1px solid gris_claro
+
+.button-menu
+	position absolute
+	top 50%
+	margin-top -10px
+	left .5em
+
+//oocss classes
+
+.container
+	padding 1.4rem
+	font-size 0
+	text-align center
+
+.header
+	height 3.5em
+	
+	//a
+	//	display none
+	.title
+		font-size 1.1em	
+		text-align center
+		margin 0
+		line-height 3.5em	
+.menu
+	display none	
+
+.name
+	color gris_oscuro
+
+.relative
+	position relative
+
+.song
+	display inline-block
+	font-size 16px
+	margin-right 1em
+	margin-bottom 1em
+	text-align left
+	width 8rem
+	&:nth-child(even)
+		margin-right 0
+
+	p
+		margin .5em 0
+
