@@ -4,6 +4,7 @@
 
 gris_oscuro = #333333
 gris_claro = #818181
+magenta = #BD255B
 
 a
 	text-decoration none
@@ -13,13 +14,29 @@ body
 
 figure
 	margin 0
+img 
+	vertical-align top
 
 
 .author
 	color gris_claro
 //buttons
+.action
+	color white;
+	font-size 1.2em
+	margin-right .5em
+	&:last-child
+		margin-right 0
+	&.gray
+		color gris_claro
 
-.border-button
+.actions
+	position absolute
+	bottom 0
+	left 0
+	right 0
+	background rgba(black, .3)
+.border-bottom
 	border-bottom 1px solid gris_claro
 
 .button-menu
@@ -30,6 +47,11 @@ figure
 	top 50%
 
 //oocss classes
+
+.center-block
+	margin 0 auto
+.center-text
+	text-align center
 
 .container
 	padding 1.4rem
@@ -52,6 +74,57 @@ figure
 .name
 	color gris_oscuro
 
+.padding
+	padding 1em
+.padding-tb
+	padding 1em 0
+.left
+	float left
+.right
+	float right
+
+.wrap
+	width 1000px
+	
+.progress
+	margin 1em 0
+	position relative
+	.min 
+	.max 
+		font-size .8em
+		position absolute
+		top -5px
+	.min
+		left 0
+	.max
+		right 0
+	.total
+		background gris_claro
+		border-radius 5px
+		height 5px
+		margin 0 auto
+		width 75%
+
+		
+	.state 
+		background magenta
+		border-radius 5px
+		height 5px
+		position relative
+		width 30%
+
+	.circle
+		background gris_oscuro
+		border-radius 50%
+		height 10px
+		position absolute
+		right 0
+		top -2px
+		width 10px
+
+.right-text
+	text-align right	
+
 .relative
 	position relative
 
@@ -68,3 +141,37 @@ figure
 	p
 		margin .5em 0
 
+.playing
+	
+	&.small
+		width 20em
+
+@media screen and (min-width:480px)
+	
+	.song
+		&:nth-child(even)
+			margin-right 1em
+	.image
+		img
+			width 100%
+			height auto
+	.playing
+		&.medium
+			width auto
+
+@media screen and (min-width:1000px)
+	
+
+	.button-menu
+		display none
+
+	.header
+		height auto
+		.title
+			display none
+	.isotipo
+		width 122px
+	.logo
+		padding 1.3em 0
+		overflow hidden
+		
