@@ -1,0 +1,30 @@
+MODELOS 
+var Song = Backbone.Model.extend({});
+undefined
+var song = new Song ({ name: "Fade to black", author:"Metalica" });
+undefined
+song
+child {cid: "c1", attributes: Object, _changing: false, _previousAttributes: Object, changed: Object…}
+song.get("name);
+SyntaxError: Unexpected token ILLEGAL
+song.get("name)
+SyntaxError: Unexpected token ILLEGAL
+song.get("name");
+"Fade to black"
+song.get("author");
+"Metalica"
+song.set({author:"Metalica Rulez"});
+child {cid: "c1", attributes: Object, _changing: false, _previousAttributes: Object, changed: Object…}
+song.get("author");
+"Metalica Rulez"
+song
+child {cid: "c1", attributes: Object, _changing: false, _previousAttributes: Object, changed: Object…}
+song.toJSON();
+Object {name: "Fade to black", author: "Metalica Rulez"}
+var Album = Backbone.Model.extend({});
+undefined
+var album = new Album ({name:"Ride the lightning",author:"Metallica"});
+undefined
+album.toJSON();
+Object {name: "Ride the lightning", author: "Metallica"}
+
