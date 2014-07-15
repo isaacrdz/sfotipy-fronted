@@ -174,7 +174,8 @@
 					<a href="" class="action icon-love gray"></a>
 					<a href="" class="action icon-share gray"></a>
 				</span>
-			</li><li class="item border-bottom">
+			</li>
+			<li class="item border-bottom">
 				<span>
 					Marilyn Monroe
 				</span>
@@ -272,9 +273,20 @@
 			<p class="author">Pharrel Williams</p>
 		</article>			
 	</section>
-
+	<script id="song-template"type="text/x-handlebars-template">
+			<span>
+				{{name}} - {{author}}
+			</span>
+			<span class="right">					
+				<a href="" class="action icon-add gray"></a>
+				<a href="" class="action icon-love gray"></a>
+				<a href="" class="action icon-share gray"></a>
+			</span>
+	</script>
 	<script src="lib/underscore.js"></script>
 	<script src="lib/jquery-1.11.1.js"></script>
 	<script src="lib/backbone.js"></script>
+	<script src = "lib/handlebars.js"></script>
+	<script src = "js/main.js"></script>
 </body>
 </html>
