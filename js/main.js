@@ -1,8 +1,15 @@
 Sfotipy = {};
 
 Sfotipy.Song = Backbone.Model.extend({});
+Sfotipy.Songs = Backbone.Collection.extend({
+	model: Sfotipy.Song
+
+});
 
 Sfotipy.SongView = Backbone.View.extend({
+	events:{
+		'click .action.icon-add':'add'
+	},
 	tagName: 'li',
 	className:'item border-bottom',
 
@@ -11,6 +18,9 @@ Sfotipy.SongView = Backbone.View.extend({
 	render: function (){
 		var html = this.template(this.model.toJSON()); 
 		this.$el.html(html);
+	},
+	add: function(e){
+		alert(this.model.get("name"));
 	}
 });
 window.Sfotipy = Sfotipy;
